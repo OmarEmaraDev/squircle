@@ -1,0 +1,37 @@
+.post-meta {
+    margin: 0;
+    text-align: center;
+
+    .card & {
+        text-align: left;
+        margin-left: 15px;
+        position: absolute;
+        bottom: 3px;
+    }
+    time {
+        font-size: 0.6em;
+        color: #505050;
+
+        &::before{
+            font-family: Icons;
+            content: "\e800";
+        }
+    }
+    .author{
+        margin: 0 0 0 15px;
+        font-size: 0.6em;
+        color: #505050;
+
+        &::before{
+            font-family: Icons;
+            content: "\e802";
+        }
+    }
+}
+.card-containter {
+    .card {
+        .post-meta-space {
+            height: 1.2em;
+        }
+    }
+}

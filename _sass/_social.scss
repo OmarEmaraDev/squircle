@@ -1,0 +1,65 @@
+.social {
+    text-align: center;
+
+    h5{
+        color: white;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .social-link {
+        padding: 15px;
+        width: $social-icon-size;
+        height: $social-icon-size;
+        border-radius: 25%;
+        margin: 5px;
+        display: inline-block;
+        transition: border-radius 200ms ease-in-out;
+
+        &:hover {
+            border-radius: 50%;
+        }
+
+        &::before {
+            font-family: Icons;
+            color: white;
+            font-size: $social-icon-size;
+            line-height: $social-icon-size;
+        }
+    }
+    .facebook {
+        background: #3B5998;
+
+        &::before {
+            content: $facebook-icon;
+        }
+    }
+    .twitter{
+        background: #55ACEE;
+
+        &::before {
+            content: $twitter-icon;
+        }
+    }
+    .stackexchange{
+        background: #19BB9B;
+
+        &::before {
+            content: $stackexchange-icon;
+        }
+    }
+    .github{
+        background: #434A54;
+
+        &::before {
+            content: $github-icon;
+        }
+    }
+}
+
+.share {
+    padding-bottom: 20px;
+
+    h3 {
+        margin-bottom: 10px;
+    }
+}

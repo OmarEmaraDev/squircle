@@ -1,0 +1,15 @@
+{% capture text %}
+{% if page.series %}
+{{page.series}}: {% else %}
+{{page.categories[0]  | replace: '-', ' ' }}: {% endif %}
+{{page.title}}%0A
+{% endcapture %}
+<div class="share">
+<div class="social">
+    <h3> Share This: </h3>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}"
+       class="social-link facebook" aria-label="Facebook" rel="noopener" target="_blank"></a>
+    <a href="https://twitter.com/share?url={{site.url}}{{page.url}}&text={{text}}"
+       class="social-link twitter" aria-label="Twitter" rel="noopener" target="_blank"></a>
+</div>
+</div>

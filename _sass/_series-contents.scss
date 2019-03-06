@@ -1,0 +1,41 @@
+.series-contents {
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #fbfbfb;
+    border: thin solid #dfdfdf;
+
+    h2 {
+        text-align: center;
+        margin: 20px;
+    }
+
+    hr {
+        border-radius: 5px;
+        border: thin solid #dfdfdf;
+    }
+
+    ol {
+        list-style-type: decimal;
+        column-count: 2;
+        list-style-position: inside;
+
+        li {
+            position: relative;
+            left: 0;
+            transition: left 200ms ease-in-out, color 200ms ease-in-out;
+    
+            &:hover {
+                left: 5px;
+                color: $amaranath;
+            }
+    
+            a {
+                color: inherit;
+            }
+        }
+
+        .current-series-post {
+            color: $amaranath;
+        }
+    }
+}

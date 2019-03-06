@@ -1,0 +1,31 @@
+markdown: kramdown
+highlighter: rouge
+plugins:
+    - jekyll-feed
+    - jekyll-sitemap
+    - jekyll-seo-tag
+    - jekyll-coffeescript
+
+permalink: none
+
+title       : Squircle Art
+description : Squircle Art is a place where I share my ideas, write tutorials and provide resources.
+url         : https://squircleart.github.io
+author      : Omar Ahmad
+social:
+    username     : OmarSquircleArt
+    twitter      : https://twitter.com/OmarSquircleArt
+    facebook     : https://facebook.com/OmarSquircleArt
+    github       : https://github.com/OmarSquircleArt
+    stackexchange: https://stackexchange.com/users/2846426/omar-ahmad
+google_site_verification : exyIY6Gbzwd1hTG4ihYxzcw7xvSaBcAqXn64UFqcoyE
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      category: "Animation-Nodes"
+      description: "No description."

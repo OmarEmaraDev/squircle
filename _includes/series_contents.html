@@ -1,0 +1,17 @@
+{% if include.page.series %}
+    {% assign series_posts = site.posts | where:"series",include.page.series | reverse %}
+    <div class="series-contents">
+        <h2> {{include.page.series}} </h2>
+        <hr>
+        <ol>
+            {% for post in series_posts %}
+                <li
+                {% if {{post.title}} == include.page.title %}
+                    class="current-series-post" 
+                {% endif %}>
+                    <a href={{post.url}}>{{post.title | append:"."}}</a>
+                </li>
+            {% endfor %}
+        </ol>
+    </div>
+{% endif %}

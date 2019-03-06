@@ -1,0 +1,19 @@
+figure {
+    margin: 0;
+    margin-bottom: 1em;
+
+    img {
+        margin: 0;
+    }
+    figcaption {
+        font-size: 0.8em;
+        text-align: center;
+
+        & * {
+            font-size: inherit;
+        }
+        p {
+            display: inline;
+        }
+    }
+}

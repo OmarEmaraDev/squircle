@@ -1,0 +1,35 @@
+{% unless figureNumber %}
+    {% assign figureNumber = 1 %}
+{% endunless %}
+
+<figure id="figure-{{figureNumber}}">
+    {% unless include.link %}
+        {% unless include.vector %}
+        <picture>
+            <source srcset="/assets/images/{{page.title | slugify}}/{{include.name}}.webp"
+                    type="image/webp"
+                    alt="Figure {{figureNumber}}">
+            <img srcset="/assets/images/{{page.title | slugify}}/{{include.name}}.png"
+                 alt="Figure {{figureNumber}}">
+        </picture>
+        {% else %}
+        <picture>
+            <img srcset="/assets/images/{{page.title | slugify}}/{{include.name}}.svg"
+                 alt="Figure {{figureNumber}}">
+        </picture>
+        {% endunless %}
+    {% else %}
+        <picture>
+            <img src="{{include.link}}"
+                 alt="Figure {{figureNumber}}">
+        </picture>
+    {% endunless %}
+
+    <figcaption>
+        <a href="#figure-{{figureNumber}}">Figure {{figureNumber}}:</a>
+        {{include.caption | markdownify}}
+    </figcaption>
+    <hr>
+</figure>
+
+{% assign figureNumber = figureNumber | plus: 1 %}

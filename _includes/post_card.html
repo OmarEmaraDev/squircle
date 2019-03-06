@@ -1,0 +1,11 @@
+<a class="card" href={{include.post.url}}>
+    <img src={{include.post.image}} alt={{include.post.title}} />
+    {% if include.post.series %}
+        <h5>{{ include.post.series }}</h5>
+    {% else %}
+        <h5>{{ include.post.category | replace: '-', ' ' }}</h5>
+    {% endif %}
+    <h4>{{ include.post.title }}</h4>
+    <div class="post-meta-space"></div>
+    {% include post_meta.html post=include.post %}
+</a>

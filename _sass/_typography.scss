@@ -1,0 +1,138 @@
+p {
+    text-align: justify;
+}
+h1, h2, h3, h4, h5 {
+    font-weight: 400;
+    margin-top: 1em;
+    margin-bottom: 0;
+    line-height: 1em;
+}
+h1 {
+    font-size: 2.441em;
+    text-align: center;
+}
+h2 {
+    font-size: 1.953em;
+}
+h3 {
+    font-size: 1.563em;
+}
+h4 {
+    font-size: 1.25em;
+}
+small {
+  font-size: 0.8em;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+blockquote {
+    margin-left: 0;
+    padding: 1em;
+    border-left: 5px solid #333;
+
+    p {
+        margin: 0;
+        font-size: 1.2em;
+
+        &::before {
+            font-family: Icons;
+            content: "\f10d";
+            color: #5b5b5b;
+            padding-right: 10px;
+            font-size: 0.8em;
+            position: relative;
+            top: -12px;
+        }
+        &::after {
+            font-family: Icons;
+            content: "\f10e";
+            color: #5b5b5b;
+            padding-left: 10px;
+            font-size: 0.8em;
+            position: relative;
+            top: 12px;
+        }
+    }
+}
+a {
+    text-decoration: none;
+    color: #0066CC;
+    font-size: inherit;
+}
+
+hr {
+    border: 0;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 1px;
+    background-color: black;
+    opacity: 0.05;
+}
+
+kbd {
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-bottom: 3px solid #e1e1e8;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 2px 5px;
+    font-family: monospace;
+    font-size: 0.8em;
+    margin: 0px 4px;
+    transition: border-bottom 100ms ease-in-out;
+
+    &:hover {
+        border-bottom: 1px solid #e1e1e8;
+    }
+}
+
+table {
+    padding: 0;
+    margin-top: 1em;
+    border-collapse: collapse;
+
+    tr {
+        border-top: 1px solid #cccccc;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+
+        &:nth-child(2n) {
+            background-color: #f8f8f8;
+        }
+
+        th {
+            font-weight: bold;
+            border: 1px solid #cccccc;
+            text-align: left;
+            margin: 0;
+            padding: 6px 13px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        td {
+            border: 1px solid #cccccc;
+            text-align: left;
+            margin: 0;
+            padding: 6px 13px;
+
+            &:first-child {
+              margin-top: 0;
+            }
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+        }
+    }
+}
